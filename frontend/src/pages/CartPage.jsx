@@ -23,6 +23,7 @@ const CartPage = () => {
   const dispatch = useDispatch();
   const { cartItems } = useSelector(state => state.cart);
 
+  // Handle adding a product to the cart with the specified quantity
   const addToCartHandler = async (product, qty) => {
     dispatch(addToCart({ ...product, qty }));
   };
